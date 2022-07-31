@@ -1,0 +1,40 @@
+class second_func{   //here we create a class
+    void use(){  /*here we create  two function within second_func
+        class here"use" and "usefun
+         if we use static we need to create a object for this class
+        and if we use only void we don't need to create a object.*/
+        int a = 5;
+        int b = 15;
+        int sum = a+b;
+        System.out.println(sum);
+    }
+     void usefun(){
+        int c = 45;
+        int d = 15;
+        int sub = c-d;
+        System.out.println(sub);
+    }}
+    class create_function{
+    static void method2(){
+        System.out.println("hello");
+    }
+    public static void main(String[] args){
+        second_func m = new second_func();
+        method2();
+        m.use();
+        m.usefun();
+
+    }
+}
+
+
+/*class test{   // here is the example of using static
+    static void method2(){
+        System.out.println("hello");
+    }
+    public static void main(String[] args){
+        test m = new test();
+        method2();
+
+    }
+}*/
