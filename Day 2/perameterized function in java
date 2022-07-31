@@ -1,0 +1,18 @@
+class perameterized_func{
+    void main(){  //without perameter
+        System.out.println("hello");
+    }
+     static int method(int x , int y){  //with perameter with return data type
+        return x+y;
+    }
+    void method2(String firstname,String lastname,int age){  //with perameter using void data type
+        System.out.println("your firstname is " + firstname +" "+ "your lastname is: " + " " + lastname + " " + "your age is " + age );
+    }
+    public static void main(String[] args){
+        perameterized_func f = new perameterized_func();
+        f.main();
+        System.out.println("your value is: " + method(5,5)); //here we give perameter value
+        f.method2("Kavita","chaurasia",24);
+
+    }
+}
