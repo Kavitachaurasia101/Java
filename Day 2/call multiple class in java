@@ -1,0 +1,26 @@
+//call multiple class to print the value
+class value{
+    int a =50;
+}
+class method{
+    int x = 5;
+    int y = 21;
+    final int y1 = 20;
+}
+class multi_call_obj{
+    public static void main(String[] args){
+value v = new value();
+method m = new method();
+method m1 = new method();
+v.a = 25; //here we assign new value for class a
+m1.y = 25; //here we assign new value class method using obj m1...so when we print the y value
+        //using obj m1 the output wiil be 25 and if we use obj m to print y value..the value will be 21..
+System.out.println(v.a);
+System.out.println(m.x);
+System.out.println(m.y);
+System.out.println(m1.y);
+System.out.println(m1.y1);
+System.out.println(m.y1);
+
+    }
+}
