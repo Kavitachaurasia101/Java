@@ -1,0 +1,35 @@
+/* //Java program to overload constructors
+Constructor name must be the same as its class name
+A Constructor must have no explicit return type
+A Java constructor cannot be abstract, static, final, and synchronized */
+class data{   //here we create a class
+    int id;
+    String name;
+    int age;
+    data(int i,String n)   //creating a parameterized constructor
+
+    {
+        id = i;
+        name = n;
+
+    }
+    data(int i,String n,int a) 
+    {
+        id = i;
+        name = n;
+        age = a;
+    }
+
+void display(){ //here we create function to print output
+
+        System.out.println("your id is : "+id+ " name: " +name + " age: " + age);
+}
+    public static void main(String[] args) {
+        //creating objects and passing values
+        data m1 = new data(2 ," kavita");
+        data m2 = new data(2 ," kavita",23);
+        //calling method to display the values of object
+        m1.display();
+       m2.display();
+    }
+}
