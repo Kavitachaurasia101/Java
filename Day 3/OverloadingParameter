@@ -1,0 +1,14 @@
+//constructor for diff parameter
+public class OverloadingParameter {
+    void area(int r){
+        System.out.println("Radius is: " + (3.14*r*r));
+    }
+    void area(int l,int b){
+        System.out.println("Rectangle Area: " + (l*b));
+    }
+    public static void main(String[] args) {
+        OverloadingParameter m1 = new OverloadingParameter();
+        m1.area(2);
+        m1.area(2,6);
+    }
+}
